@@ -29,7 +29,6 @@ Route::middleware('auth')->group(function(){
     Route::patch('/post/{post}/edit', 'PostController@update')->name('post.update');
     Route::delete('/post/{post}/delete', 'PostController@destroy')->name('post.destroy');
 });
-# Akhir Batasi hak akses cara kesatu
 /* Batasi hak akses cara kedua
 Route::get('/post', 'PostController@index')->name('post.index')->middleware('auth');
 */
